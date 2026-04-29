@@ -37,7 +37,22 @@ b4.setBounds(200,100,50,30);
 
 Button b5=new Button("%");
 b5.setBounds(250,100,50,30);
+ActionListener action=e ->
+{
+ int a=Integer.parseInt(t1.getText());
+   int b=Integer.parseInt(t2.getText());
+   if(e.getSource()==b1)
+   {
+  int z=a+b;
+	t3.setText(String.valueOf(z));
+   }
+   if(e.getSource()==b2)
+   {
+    int z1=a-b;
+	t3.setText(String.valueOf(z1));
 
+
+    }
 
 
 
